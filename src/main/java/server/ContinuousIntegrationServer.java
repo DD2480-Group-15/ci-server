@@ -43,7 +43,7 @@ public class ContinuousIntegrationServer<BASE64Encoder, BASE64Decoder> extends A
     {
         response.setContentType("text/html;charset=utf-8");
         response.setStatus(HttpServletResponse.SC_OK);
-        baseRequest.setHandled(true)
+        baseRequest.setHandled(true);
 
         String who = request.getHeader("user-agent");
         if(who.contains("GitHub-Hookshot")) {
